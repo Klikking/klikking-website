@@ -28,6 +28,20 @@ export default function AiAgentsPage({ dict, locale }: { dict: Dictionary; local
           }),
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: p.faq.map((item) => ({
+              "@type": "Question",
+              name: item.q,
+              acceptedAnswer: { "@type": "Answer", text: item.a },
+            })),
+          }),
+        }}
+      />
       <section
         className="section section--relative"
         style={{ paddingTop: "calc(76px + clamp(3rem,8vw,5rem))", paddingBottom: "clamp(2rem,5vw,3rem)" }}
