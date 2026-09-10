@@ -28,7 +28,7 @@ export default function Header({ dict, locale }: { dict: Dictionary; locale: Loc
   return (
     <header className="nav">
       <div className="wrap nav__row">
-        <Link href={pathFor(locale, "home")} className="brand" aria-label={dict.nav.home}>
+        <Link href={pathFor(locale, "home")} className="brand">
           <svg viewBox="0 0 32 32" fill="none" aria-hidden="true">
             <path
               d="M6 4 L6 25 L11.2 20.2 L14.8 27.5 L18.4 25.8 L14.8 18.5 L21.8 18.5 Z"

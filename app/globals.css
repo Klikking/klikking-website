@@ -22,9 +22,9 @@
   --band-muted:#C7C7D1;
   --card-shadow: 0 1px 3px rgba(20,20,26,.05);
 
-  --serif: "Instrument Serif", Georgia, serif;
-  --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  --mono: "IBM Plex Mono", "SFMono-Regular", Menlo, monospace;
+  --serif: var(--font-serif), Georgia, serif;
+  --sans: var(--font-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --mono: var(--font-mono), "SFMono-Regular", Menlo, monospace;
 
   --maxw: 1220px;
   --gutter: clamp(1.25rem, 4vw, 3.5rem);
@@ -309,7 +309,7 @@ em, .italic{ font-style:italic; color:var(--signal-ink); }
 .footer__top{ display:flex; flex-wrap:wrap; justify-content:space-between; gap:2.5rem; }
 .footer__brand{ max-width:320px; }
 .footer__cols{ display:flex; gap:4rem; flex-wrap:wrap; }
-.footer__col h4{ font-family:var(--mono); font-size:.72rem; letter-spacing:.08em; text-transform:uppercase; color:var(--graphite); margin-bottom:1rem; }
+.footer__col h2{ font-family:var(--mono); font-weight:400; font-size:.72rem; letter-spacing:.08em; text-transform:uppercase; color:var(--graphite); margin-bottom:1rem; }
 .footer__col a, .footer__col p{ display:block; margin-bottom:.55rem; color:var(--ink-soft); font-size:.92rem; }
 .footer__col a:hover{ color:var(--signal-ink); }
 .footer__bottom{

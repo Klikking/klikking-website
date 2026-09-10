@@ -24,19 +24,20 @@ export default function Footer({ dict, locale }: { dict: Dictionary; locale: Loc
 
           <div className="footer__cols">
             <div className="footer__col">
-              <h4>{dict.footer.navHeading}</h4>
+              <h2>{dict.footer.navHeading}</h2>
               <Link href={pathFor(locale, "services")}>{dict.nav.services}</Link>
+              <Link href={pathFor(locale, "aiAgents")}>{dict.nav.aiAgents}</Link>
               <Link href={pathFor(locale, "work")}>{dict.nav.work}</Link>
               <Link href={pathFor(locale, "about")}>{dict.nav.about}</Link>
               <Link href={pathFor(locale, "contact")}>{dict.nav.contact}</Link>
             </div>
             <div className="footer__col">
-              <h4>{dict.footer.contactHeading}</h4>
+              <h2>{dict.footer.contactHeading}</h2>
               <a href="mailto:info@klikking.hu">info@klikking.hu</a>
               <a href="https://klikking.hu">klikking.hu</a>
             </div>
             <div className="footer__col">
-              <h4>{dict.footer.basedHeading}</h4>
+              <h2>{dict.footer.basedHeading}</h2>
               <p>{dict.footer.basedIn}</p>
             </div>
           </div>
