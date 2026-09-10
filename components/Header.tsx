@@ -11,6 +11,7 @@ import LangSwitcher from "./LangSwitcher";
 const NAV_ITEMS: { key: PageKey; label: (d: Dictionary) => string }[] = [
   { key: "home", label: (d) => d.nav.home },
   { key: "services", label: (d) => d.nav.services },
+  { key: "aiAgents", label: (d) => d.nav.aiAgents },
   { key: "work", label: (d) => d.nav.work },
   { key: "about", label: (d) => d.nav.about },
   { key: "contact", label: (d) => d.nav.contact },

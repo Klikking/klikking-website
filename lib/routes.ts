@@ -7,6 +7,7 @@ export const SITE_URL = "https://klikking.hu";
 export const PAGE_KEYS = [
   "home",
   "services",
+  "aiAgents",
   "work",
   "about",
   "contact",
@@ -19,6 +20,7 @@ export type PageKey = (typeof PAGE_KEYS)[number];
 export const SLUGS: Record<PageKey, Record<Locale, string>> = {
   home: { hu: "", en: "" },
   services: { hu: "szolgaltatasok", en: "services" },
+  aiAgents: { hu: "ai-ugynokok", en: "ai-agents" },
   work: { hu: "munkaim", en: "work" },
   about: { hu: "rolam", en: "about" },
   contact: { hu: "kapcsolat", en: "contact" },

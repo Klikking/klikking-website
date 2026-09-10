@@ -13,6 +13,18 @@ export const PAGE_SEO: Record<Exclude<PageKey, "home">, Record<Locale, { title: 
         "Web development, WooCommerce, technical SEO, Meta & Google ad management, maintenance and security — all under one roof at Klikking.",
     },
   },
+  aiAgents: {
+    hu: {
+      title: "AI Ügynökök — KlikkingAI | Google-értékelés kezelő helyi vállalkozásoknak",
+      description:
+        "KlikkingAI: AI ügynök, ami válaszol a Google-értékeléseidre, kiszűri a panaszokat, mielőtt nyilvánossá válnának, és figyeli a helyi kereshetőségedet. 9 900 Ft/hó.",
+    },
+    en: {
+      title: "AI Agents — KlikkingAI | Google review management for local businesses",
+      description:
+        "KlikkingAI: an AI agent that replies to your Google reviews, catches complaints before they go public, and tracks your local search visibility. From 9,900 Ft/mo.",
+    },
+  },
   work: {
     hu: {
       title: "Munkáim — Klikking | Referenciák és esettanulmányok",

@@ -3,6 +3,7 @@ export interface Dictionary {
   nav: {
     home: string;
     services: string;
+    aiAgents: string;
     work: string;
     about: string;
     contact: string;
@@ -71,6 +72,33 @@ export interface Dictionary {
     ctaTitle: string;
     ctaText: string;
     ctaButton: string;
+  };
+  aiAgents: {
+    eyebrow: string;
+    badge: string;
+    h1: string;
+    lede: string;
+    ctaPrimary: string;
+    ctaLogin: string;
+    howItWorksTitle: string;
+    steps: { title: string; text: string }[];
+    featuresTitle: string;
+    featuresLede: string;
+    features: { title: string; text: string }[];
+    pricingTitle: string;
+    pricingLede: string;
+    monthlyLabel: string;
+    annualLabel: string;
+    savingsLabel: string;
+    perMonth: string;
+    perYear: string;
+    dailyPrice: string;
+    dailyNote: string;
+    included: string[];
+    ctaButton: string;
+    legalNote: { pre: string; terms: string; mid: string; privacy: string; post: string };
+    faqTitle: string;
+    faq: { q: string; a: string }[];
   };
   work: {
     eyebrow: string;

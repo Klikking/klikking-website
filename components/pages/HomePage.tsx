@@ -129,6 +129,23 @@ export default function HomePage({ dict, locale }: { dict: Dictionary; locale: L
         </div>
       </section>
 
+      <section className="section--tight wash-signal">
+        <div className="wrap grid grid--2" style={{ alignItems: "center" }}>
+          <div className="reveal">
+            <span className="tag" style={{ borderColor: "var(--signal)", color: "var(--signal-ink)" }}>
+              {dict.aiAgents.badge}
+            </span>
+            <h2 className="mt-2">{dict.aiAgents.h1}</h2>
+          </div>
+          <div className="reveal">
+            <p className="lede">{dict.aiAgents.lede}</p>
+            <Link href={pathFor(locale, "aiAgents")} className="btn magnetic mt-2">
+              {dict.aiAgents.ctaPrimary}
+            </Link>
+          </div>
+        </div>
+      </section>
+
       <section className="section">
         <div className="wrap">
           <div className="grid grid--2" style={{ alignItems: "end", marginBottom: "2.5rem" }}>

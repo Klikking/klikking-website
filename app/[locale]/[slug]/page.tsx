@@ -13,6 +13,7 @@ import {
 } from "@/lib/routes";
 import { PAGE_SEO } from "@/lib/seo";
 import ServicesPage from "@/components/pages/ServicesPage";
+import AiAgentsPage from "@/components/pages/AiAgentsPage";
 import WorkPage from "@/components/pages/WorkPage";
 import AboutPage from "@/components/pages/AboutPage";
 import ContactPage from "@/components/pages/ContactPage";
@@ -82,6 +83,8 @@ export default async function Page({
   switch (key) {
     case "services":
       return <ServicesPage dict={dict} locale={locale} />;
+    case "aiAgents":
+      return <AiAgentsPage dict={dict} locale={locale} />;
     case "work":
       return <WorkPage dict={dict} locale={locale} />;
     case "about":
