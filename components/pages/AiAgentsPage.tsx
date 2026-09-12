@@ -63,7 +63,7 @@ export default function AiAgentsPage({ dict, locale }: { dict: Dictionary; local
             <a href="#arak" className="btn magnetic">
               {p.ctaPrimary}
             </a>
-            <a href="/blog" className="link-arrow" style={{ display: "inline-flex", alignItems: "center" }}>
+            <a href={`${KLIKKING_AI_APP_URL}/blog`} className="link-arrow" style={{ display: "inline-flex", alignItems: "center" }}>
               Blog
             </a>
             <a href={KLIKKING_AI_APP_URL} className="link-arrow" style={{ display: "inline-flex", alignItems: "center" }}>

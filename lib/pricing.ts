@@ -9,7 +9,7 @@ export const ANNUAL_PRICE = 99900;
 export const STRIPE_LINK_MONTHLY = "https://buy.stripe.com/00wcN60DYbFw2sx3ye0co04";
 export const STRIPE_LINK_ANNUAL = "https://buy.stripe.com/fZu9AU2M6bFwgjnb0G0co02";
 
-export const KLIKKING_AI_APP_URL = "https://okosertekelesszuro-blond.vercel.app";
+export const KLIKKING_AI_APP_URL = "https://app.klikking.hu";
 
 export function formatFt(amount: number, locale: Locale): string {
   const separator = locale === "hu" ? " " : ",";

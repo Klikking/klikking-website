@@ -15,12 +15,10 @@ const nextConfig: NextConfig = {
       { source: "/munkaim", destination: "/hu/munkaim", permanent: true },
       { source: "/rolam", destination: "/hu/rolam", permanent: true },
       { source: "/kapcsolat", destination: "/hu/kapcsolat", permanent: true },
-      // The KlikkingAI blog stays on the app itself for now — this just
-      // gives it a memorable klikking.hu URL. Not "permanent" since the
-      // target is still the default *.vercel.app domain (will move once
-      // that product gets its own custom domain).
-      { source: "/blog", destination: `${KLIKKING_AI_APP_URL}/blog`, permanent: false },
-      { source: "/blog/:slug", destination: `${KLIKKING_AI_APP_URL}/blog/:slug`, permanent: false },
+      // The KlikkingAI blog stays on the app itself (app.klikking.hu) —
+      // this just gives it a memorable klikking.hu URL too.
+      { source: "/blog", destination: `${KLIKKING_AI_APP_URL}/blog`, permanent: true },
+      { source: "/blog/:slug", destination: `${KLIKKING_AI_APP_URL}/blog/:slug`, permanent: true },
     ];
   },
 };
